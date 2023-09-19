@@ -24,7 +24,7 @@ ubot = None  # Don't Touch This
 #<---------------Connecting-------------->
 if BOT_TOKEN is not None:
     try:
-        encoder  = Client('AutoEncoder', api_id=API_ID, api_hash=API_HASH, bot_token=BOT_TOKEN, plugins=dict(root="Bot/plugins"))
+        encoder  = Client('AutoEncoder', api_id=API_ID, api_hash=API_HASH, bot_token=BOT_TOKEN, plugins=dict(root=f"{name}.plugins"))
         LOG.info('❤️ Bot Connected Created By Github @soheru || Telegram @sohailkhan_indianime ')
     except Exception as e:
         LOG.warn(f'😞 Error While Connecting To Bot\nCheck Errors: {e}')
@@ -35,7 +35,7 @@ def create_ubot():
     global ubot
     if SESSION_STRING != "None":
         try:
-            ubot = Client("AutoEncoder", session_string=SESSION_STRING, api_id=API_ID, api_hash=API_HASH, plugins=plugins)
+            ubot = Client("AutoEncoder", session_string=SESSION_STRING, api_id=API_ID, api_hash=API_HASH, plugins=dict(root=f"{name}.plugins"))
             LOG.info("❤️ 4GB String Session Connected")
             return ubot
         except:
