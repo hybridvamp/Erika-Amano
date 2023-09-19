@@ -38,7 +38,7 @@ def create_ubot():
             ubot = Client("AutoEncoder", session_string=SESSION_STRING, api_id=API_ID, api_hash=API_HASH, plugins=dict(root=f"{name}.plugins"))
             LOG.info("❤️ 4GB String Session Connected")
             return ubot
-        except:
-            LOG.info('😞 Error While Connecting To String Session')    
+        except Exception as e:
+            LOG.warn(f'😞 Error While Connecting To Bot\nCheck Errors: {e}')    
             sys.exit()   
             return None

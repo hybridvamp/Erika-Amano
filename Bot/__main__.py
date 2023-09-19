@@ -11,7 +11,8 @@ if success != None:
 
 try:
     encoder.send_message(OWNER_ID, text='Bot Started', reply_markup=IKM([[IKB('ʜᴇʟᴘ', 'answer_help'), IKB('ᴅᴇᴠᴇʟᴏᴘᴇʀ', 'answer_about_dev')]]))
-except:
+except Exception as e:
+    LOG.warn(f'😞 Error While Connecting To Bot\nCheck Errors: {e}')
     pass    
 
 loop = asyncio.get_event_loop()
