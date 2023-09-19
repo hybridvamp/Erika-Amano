@@ -13,7 +13,7 @@ LOG.info('❤️ Checking Bot Variables.....')
 TRIGGERS = os.environ.get("TRIGGERS", "/ !").split(" ")
 BOT_TOKEN = os.environ.get('BOT_TOKEN', 'your bot token') #BOT Token Add
 API_ID = int(os.environ.get('API_ID', 456789)) #Telgram Api id
-APP_HASH = os.environ.get('APP_HASH', 'your api id')# Telgram App hash  
+API_HASH = os.environ.get('API_HASH', 'your api id')# Telgram App hash  
 OWNER_ID = int(os.environ.get('OWNER_ID', 1412909688))
 MONGO_DB = os.environ.get("MONGO_DB", 'your mongodb') #MONGO DB FOR ANIME DATA
 FILES_CHANNEL = os.environ.get("FILES_CHANNEL", -100456789013)    # Must Fill This ,Add Bot As Admin In Log Channel
