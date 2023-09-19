@@ -36,9 +36,9 @@ def create_ubot():
     if SESSION_STRING != "None":
         try:
             ubot = Client("AutoEncoder", session_string=SESSION_STRING, api_id=API_ID, api_hash=API_HASH, plugins=plugins)
-            LOGS.info("❤️ 4GB String Session Connected")
+            LOG.info("❤️ 4GB String Session Connected")
             return ubot
         except:
-            LOGS.info('😞 Error While Connecting To String Session')    
+            LOG.info('😞 Error While Connecting To String Session')    
             sys.exit()   
             return None
