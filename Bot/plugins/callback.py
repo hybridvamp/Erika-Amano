@@ -76,15 +76,15 @@ BUTTONS_VCODEC = IKM(
 BUTTONS_DEV = IKM(
     [
         [
-            IKB('ᴅᴇᴠᴇʟᴏᴘᴇʀ', url='https://t.me/sohailkhan_indianime'),
-            IKB('ɢɪᴛʜᴜʙ', url = 'https://github.com/soheru')
+            IKB('ᴅᴇᴠᴇʟᴏᴘᴇʀ', url='https://t.me/hybrid_vamp'),
+            IKB('ɢɪᴛʜᴜʙ', url = 'https://github.com/hybridvamp')
         ],
         [
-            IKB('ᴡᴇʙsɪᴛᴇ', url='https://teamyokai.tech'),
-            IKB('ᴄʜᴀɴɴᴇʟ', url='https://t.me/aboutmesk'),
+            IKB('Dramahy', url='https://t.me/dramahy'),
+            IKB('ᴄʜᴀɴɴᴇʟ', url='https://t.me/hybrid_bots'),
         ],
         [
-            IKB('ɪɴsᴛᴀɢʀᴀᴍ', url='https://instagram.com/_soheru'),
+            IKB('Updates', url='https://t.me/hybrid_bots'),
             IKB('ʜᴇʟᴘ', 'answer_help')
         ]
     ]
